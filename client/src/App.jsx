@@ -4,7 +4,8 @@ import ChatFeed from "./ChatFeed";
 import ChatInput from "./ChatInput";
 import TitleChat from "./TitleChat";
 
-const socket = io("http://localhost:4000");
+// const socket = io("http://localhost:4000");
+const socket = io();
 
 function App() {
   const [message, setMessage] = useState("");

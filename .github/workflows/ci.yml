@@ -69,6 +69,7 @@ jobs:
         with:
           path: client/build
 
+
   # Deployment job
   deploy:
     environment:
@@ -77,6 +78,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Run server
+        run: npm run start
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

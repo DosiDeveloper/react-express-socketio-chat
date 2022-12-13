@@ -1,4 +1,4 @@
-import { Server } from "Socket.IO";
+import { Server } from "socket.io";
 
 const ChatHandler = (req, res) => {
   if (!res.socket.server.io) {

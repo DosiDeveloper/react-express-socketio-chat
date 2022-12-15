@@ -20,6 +20,8 @@ const ChatInput = ({ message, setMessage, setMessages, messages, socket}) => {
         onChange={(e) => setMessage(e.target.value)}
         value={message}
         className="border-1 border-zinc-500 p-2 text-black w-full rounded"
+        role="text"
+        name="input-chat"
       />
     </form>
   );
